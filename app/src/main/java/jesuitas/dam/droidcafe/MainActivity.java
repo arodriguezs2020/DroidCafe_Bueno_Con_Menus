@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void mostrar(View view) {
-        Intent intent = new Intent();
+        Intent intent = new Intent(this,MostrarTexto.class);
         intent.putExtra("Texto", toast.toString());
         startActivity(intent);
     }
